@@ -1,0 +1,14 @@
+.navitem{
+    cursor: pointer;
+}
+.arrow{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-left: 3px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
