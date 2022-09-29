@@ -1,0 +1,24 @@
+button{
+    display: flex;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 255, 0.993);
+    height: 40px;
+    align-items: center;
+    width: 140px;
+    justify-content: center;
+    color: white;
+    background: rgba(61, 61, 179, 0.822) !important; 
+}
+.spn2{
+    position: relative;
+    top: -5px;
+    font-size: 30px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.753);
+}
+button:hover .spn2{
+    left: 8px;
+}
