@@ -1,4 +1,38 @@
-.homes{
-    z-index: 0;
-    height: 200vh;
+.homes {
+  z-index: 0;
+  color: black;
 }
+.pg1 {
+  padding-top: 40px;
+  background-color: #220046;
+  color: white;
+  height: 100vh;
+}
+.pg2img {
+  background: url(https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: polygon(0% 0, 100% 0, 100% 70%, 0 46%);
+}
+h3{
+    color: black;
+}
+.pg3 img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.pg4{
+    color: black;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.pg7vid{
+  height: 100vh;
+  clip-path: polygon(0% 0, 100% 0, 100% 70%, 0 46%);
+}
+
