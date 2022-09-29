@@ -1,4 +1,4 @@
 .homes{
-    background: linear-gradient(blue,red);
+    z-index: 0;
     height: 200vh;
 }

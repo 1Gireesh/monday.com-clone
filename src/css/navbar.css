@@ -8,7 +8,9 @@
     margin-left: 3px;
 }
 header{
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 1;
 }
