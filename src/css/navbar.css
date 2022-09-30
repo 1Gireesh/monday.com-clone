@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     margin-left: 3px;
+    position: relative;
+    top: 7px;
 }
 header{
     position: fixed;

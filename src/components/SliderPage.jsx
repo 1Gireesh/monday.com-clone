@@ -64,7 +64,7 @@ export default function SliderPage() {
                             style={{borderBottom: c===i? "4px solid blue":"",
                                 cursor:"pointer"
                         }}
-                            key={Math.random()} direction="column" alignItems="center" justifyContent="center">
+                            key={i} direction="column" alignItems="center" justifyContent="center">
                                 <Image w="30px" src={e.i} alt=""></Image>
                                 <Text>{e.h}</Text>
                             </Flex>)
