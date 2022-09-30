@@ -42,6 +42,7 @@ export default function SlidingPage2() {
             {
               arr.map((e, i) => {
                 return (<button
+                key={i}
                 onClick={()=>setC(i)}
                  style={{
                     height: "10px",

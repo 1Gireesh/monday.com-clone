@@ -1,8 +1,8 @@
 import React from 'react';
 import "../css/getStartbtn.css"
-const GetStartBtn = () => {
+const GetStartBtn = ({setGts}) => {
     return (
-        <button >
+        <button onClick={()=>setGts(1)}>
             <span className='spn1'>Get Started</span>
                 <span className='spn2'>→</span>
         </button >
