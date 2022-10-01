@@ -25,7 +25,7 @@ const NavBar = () => {
 
 
     return (
-        <header>
+        <div>
             <Flex bg="white" justifyContent={"space-between"} h="60px">
                 <Flex justifyContent={"space-evenly"} alignItems="center">
                     <Image w="30%" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png" alt=""></Image>
@@ -82,7 +82,7 @@ const NavBar = () => {
             {
                 drop == 4 && <Resources></Resources>
             }
-        </header>
+        </div>
     );
 }
 
