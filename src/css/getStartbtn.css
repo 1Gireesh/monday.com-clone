@@ -1,4 +1,4 @@
-button{
+.button{
     display: flex;
     border-radius: 20px;
     background-color: rgba(0, 0, 255, 0.993);

@@ -2,7 +2,7 @@ import React from 'react';
 import "../css/getStartbtn.css"
 const GetStartBtn = ({setGts}) => {
     return (
-        <button onClick={()=>setGts(1)}>
+        <button className='button' onClick={()=>setGts(1)}>
             <span className='spn1'>Get Started</span>
                 <span className='spn2'>→</span>
         </button >
