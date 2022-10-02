@@ -1,30 +1,42 @@
-import { Container, Flex, HStack, Image, Spacer, VStack } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Container, Flex, HStack, Image, Spacer, VStack } from '@chakra-ui/react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import "../css/work.css"
 import One from "./workComponts/1"
+import Two from "./workComponts/2"
+import Three from "./workComponts/3"
+import Four from "./workComponts/4"
+import Five from "./workComponts/5"
+
 export default function Work() {
 
 
   let [icon, setIcon] = useState([]);
+  let [iconi, setIconi] = useState(1);
 
   function handleClick(nu) {
     for (let i of icon) i = 0;
     icon[nu] = 1;
     setIcon(icon);
-
+    setIconi(nu);
     let imgs = document.querySelectorAll('.sidebarChild>img');
-    
-    for(let i=0; i<imgs.length; i++){
+
+    for (let i = 0; i < imgs.length; i++) {
       imgs[i].style.background = ""
     }
 
-    imgs[nu-1].style.background = "black";
+    imgs[nu - 1].style.background = "black";
 
   }
 
+  useEffect(()=>{
+
+  })
+
+  const comps = [One, Two, Three, Four, Five, 'Six', 'Seven', "Eight", "Nine", "Ten"];
+
   return (
-    <div>
+    <Box>
       <HStack>
 
         {/* sidbar */}
@@ -37,7 +49,7 @@ export default function Work() {
             <img onClick={(e) => { handleClick(4) }} src="https://img.icons8.com/ultraviolet/2x/inbox.png" alt="" />
             <img onClick={(e) => { handleClick(5) }} src="https://img.icons8.com/office/2x/menu--v2.png" alt="" />
             <img onClick={(e) => { handleClick(6) }} src="https://img.icons8.com/emoji/2x/star-emoji.png" alt="" />
-            <div className='spacer'>see plans</div>
+            <Box className='spacer'>see plans</Box>
             <img onClick={(e) => { handleClick(7) }} src="https://img.icons8.com/external-flat-berkahicon/2x/external-Invite-online-meeting-flat-berkahicon.png" alt="" />
             <img onClick={(e) => { handleClick(8) }} src="https://img.icons8.com/cotton/2x/search.png" alt="" />
             <img onClick={(e) => { handleClick(9) }} src="https://img.icons8.com/external-others-inmotus-design/2x/external-Question-keyboard-others-inmotus-design.png" alt="" />
@@ -51,10 +63,19 @@ export default function Work() {
 
         {/* main page */}
         <Container className='mainSpace'>
-      <One></One>
+
+
+          {(iconi == 1) && <One></One>}
+          {(iconi == 2) && <Two></Two>}
+          {(iconi == 3) && <Three></Three>}
+          {(iconi == 4) && <Four></Four>}
+          {(iconi == 5) && <Five></Five>}
+
+
+
         </Container>
 
       </HStack>
-    </div>
+    </Box>
   )
 }

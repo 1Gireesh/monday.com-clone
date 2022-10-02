@@ -53,3 +53,37 @@
     margin-top: 100px;
     
 }
+
+
+/* 2.css  */
+
+.two{
+
+}
+
+.sidebar2{
+  position: absolute;
+  top: 5px;
+  height: 99vh;
+  left: 65px;
+  box-shadow: 1px 1px 5px rgb(75, 68, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* left: -265px; */
+}
+.twosm{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opensid{
+  position: absolute;
+  left: 65px;
+  top: 80px;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
